@@ -1,0 +1,54 @@
+.table{
+	-fx-background-color : #BFD4DB;
+	-fx-background-radius: 50 50 50 50;
+}
+.blue
+{
+	-fx-background-color : #BED1CD;
+	-fx-background-radius : 30 30 30 30;
+
+}
+.blue:hover
+{
+	-fx-background-color : #F1EEE8;
+	-fx-background-radius : 20 20 20 20;
+}
+.blue:pressed
+{
+	-fx-background-color : #239c9c;
+	-fx-background-radius : 30 30 30 30;
+}
+.root
+{
+	-fx-background-color : #333;
+}
+.exit
+{
+	-fx-background-color : #F1EEE8;
+	-fx-background-radius : 5 5 5 5;
+
+}
+.exit:hover
+{
+	-fx-background-color : #DAD0C8;
+	-fx-background-radius : 1 1 1 1;
+}
+.triangel{
+	-fx-background-color : #550503;
+}
+.pages{
+	-fx-background-color :  #282820;
+	
+}
+.text-simple { 
+ -fx-font-smoothing-type: lcd;
+ -fx-fill: white;
+  -fx-text-fill: #FFDFD3;
+}
+.back{
+	-fx-background-color : #333;
+}
+.back:hover{
+	-fx-background-color : #B7BCB6;
+	
+}

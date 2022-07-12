@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <left>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #BED1CD;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="136.0" prefWidth="170.0">
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="75.0" layoutX="38.0" layoutY="-3.0" opacity="0.75">
+                     <image>
+                        <Image url="@../Images/libIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="25.0" layoutY="84.0" text="STUDENT SYSTEM" />
+               </children>
+            </AnchorPane>
+            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="59.0" prefWidth="176.0" styleClass="blue" stylesheets="@application.css" text="Home">
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="53.0">
+                     <image>
+                        <Image url="@../Images/homeIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#searchBook" prefHeight="59.0" prefWidth="176.0" styleClass="blue" stylesheets="@application.css" text="SearchBook">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="52.0">
+                     <image>
+                        <Image url="@../Images/libUserSymbol.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#readBook" prefHeight="65.0" prefWidth="170.0" styleClass="blue" stylesheets="@application.css" text="ReadBook">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" opacity="0.7">
+                     <image>
+                        <Image url="@../Images/readBook.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#switchUserProfile" prefHeight="62.0" prefWidth="167.0" styleClass="blue" stylesheets="@application.css" text="Profile">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="48.0" opacity="0.78">
+                     <image>
+                        <Image url="@../Images/usIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="exitProgram" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#exitProgram" prefHeight="52.0" prefWidth="172.0" styleClass="blue" stylesheets="@application.css" text="Exit">
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="56.0" opacity="0.67">
+                     <image>
+                        <Image url="@../Images/exitIcon2.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutY="-8.0" mnemonicParsing="false" onAction="#switchUserScreen" prefHeight="76.0" prefWidth="90.0" styleClass="back">
+               <graphic>
+                  <ImageView fitHeight="88.0" fitWidth="77.0" opacity="0.63" pickOnBounds="true" preserveRatio="true" styleClass="back">
+                     <image>
+                        <Image url="@../Images/backIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label layoutX="119.0" layoutY="173.0" prefHeight="193.0" prefWidth="627.0" styleClass="text-simple" stylesheets="@application.css" text="Welcome The Deu CENG Library">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="123.0" layoutY="423.0" onAction="#openContact" prefHeight="59.0" prefWidth="71.0" styleClass="blue">
+               <graphic>
+                  <ImageView fitHeight="63.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/mailIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Hyperlink>
+            <Label layoutX="47.0" layoutY="358.0" prefHeight="56.0" prefWidth="280.0" styleClass="text-simple" stylesheets="@application.css" text="Contact and Support">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
+	Ipublic void run (){
+   tryl
+      Thread.sleep (3000);
+    }catch (Exception e){
+      System.out.println (e);
+   Platform.runLater(new Runnable (){
+      @override
+      public void run (){
+         try{
+            borderPane=FXMLLoader.load (getClass ().getResource ("FX Dashboard.fxml"));
+            Stage stage=new Stage ();
+            Scene scene=new Scene (borderPane);
+             stage.setTitle ("Kensoft PH");
+             stage.setScene (scene);
+            stage.setMinHeight (400);
+             stage.setMinWidth (600);
+             stage.show ();
+             apane.getScene ().getWindow ().hide ();
+           }catch (IOException ex){
+            Logger.getLogger (FX_SplashController.class.getName ()).log (Level. SEVERE, null, ex);
+   });
+</AnchorPane>
+

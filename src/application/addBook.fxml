@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addBook">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css">
+         <children>
+            <TableView fx:id="searchTable" layoutX="-4.0" layoutY="227.0" prefHeight="382.0" prefWidth="813.0" stylesheets="@application.css">
+               <columns>
+                  <TableColumn fx:id="ISBN" prefWidth="93.0" text="ISBN" />
+                  <TableColumn fx:id="name" prefWidth="249.0" text="NAME" />
+                  <TableColumn fx:id="author" prefWidth="270.0" text="AUTHOR" />
+                  <TableColumn fx:id="pages" prefWidth="131.0" text="PAGES" />
+                  <TableColumn fx:id="quantity" minWidth="0.0" prefWidth="69.0" text="Quantity" />
+               </columns>
+            </TableView>
+            <TextField layoutX="200.0" layoutY="-47.0" text="SEARCH" />
+            <Label layoutX="11.0" layoutY="19.0" prefHeight="68.0" prefWidth="246.0" style="-fx-background-color: #F1EEE8; -fx-background-radius: 50;" styleClass="table" stylesheets="@application.css" text=" AddBook">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textBookSearch" layoutX="609.0" layoutY="53.0" promptText="Search" />
+            <ImageView fitHeight="82.0" fitWidth="79.0" layoutX="161.0" layoutY="12.0">
+               <image>
+                  <Image url="@../Images/libUserSymbol.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="ISBNaddBook" layoutX="11.0" layoutY="132.0" promptText="ISBN" />
+            <TextField fx:id="nameAddBook" layoutX="222.0" layoutY="132.0" promptText="Name" />
+            <TextField fx:id="authorAddBook" layoutX="424.0" layoutY="132.0" promptText="Author" />
+            <TextField fx:id="pagesAddBook" layoutX="631.0" layoutY="132.0" prefHeight="25.0" prefWidth="137.0" promptText="Pages" />
+            <Text fill="WHITE" layoutX="14.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN">
+               <font>
+                  <Font name="Al Tarikh Regular" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="424.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author">
+               <font>
+                  <Font name="Al Tarikh Regular" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="222.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" wrappingWidth="50.341796875">
+               <font>
+                  <Font name="Al Tarikh Regular" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="631.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pages">
+               <font>
+                  <Font name="Al Tarikh Regular" size="13.0" />
+               </font>
+            </Text>
+            <Button layoutX="689.0" layoutY="189.0" mnemonicParsing="false" onAction="#addABook" prefHeight="25.0" prefWidth="79.0" text="Add" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

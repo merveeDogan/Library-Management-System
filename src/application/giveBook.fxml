@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.giveBook">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css">
+         <children>
+            <TableView fx:id="searchTable" layoutX="-4.0" layoutY="227.0" prefHeight="382.0" prefWidth="382.0" stylesheets="@application.css">
+               <columns>
+                  <TableColumn fx:id="ISBN" prefWidth="93.0" text="ISBN" />
+                  <TableColumn fx:id="name" prefWidth="214.0" text="NAME" />
+                  <TableColumn fx:id="quantity" prefWidth="88.0" text="Quantity" />
+               </columns>
+            </TableView>
+            <Label layoutX="11.0" layoutY="19.0" prefHeight="68.0" prefWidth="246.0" style="-fx-background-color: #F1EEE8; -fx-background-radius: 50;" styleClass="table" stylesheets="@application.css" text=" Give Book">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textBookSearch" layoutX="609.0" layoutY="53.0" promptText="Search" />
+            <ImageView fitHeight="56.0" fitWidth="64.0" layoutX="180.0" layoutY="26.0" opacity="0.74">
+               <image>
+                  <Image url="@../Images/giveBook.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="ISBNgiveBook" layoutX="11.0" layoutY="190.0" promptText="ISBN" />
+            <TextField fx:id="IDgiveBook" layoutX="415.0" layoutY="190.0" promptText="ID" />
+            <Text fill="WHITE" layoutX="11.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN">
+               <font>
+                  <Font name="Al Tarikh Regular" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="415.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+               <font>
+                  <Font name="Al Tarikh Regular" size="13.0" />
+               </font>
+            </Text>
+            <Button layoutX="712.0" layoutY="190.0" mnemonicParsing="false" onAction="#giveABook" prefHeight="25.0" prefWidth="79.0" text="Give" />
+            <TableView fx:id="UserTable" layoutX="408.0" layoutY="227.0" prefHeight="382.0" prefWidth="396.0" stylesheets="@application.css">
+               <columns>
+                  <TableColumn fx:id="ID" prefWidth="93.0" text="ID" />
+                  <TableColumn fx:id="nameUser" prefWidth="341.0" text="NAME" />
+               </columns>
+            </TableView>
+            <Text fx:id="message" layoutX="11.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-simple" wrappingWidth="431.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

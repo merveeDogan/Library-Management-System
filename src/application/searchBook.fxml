@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.searchBook">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="805.0" styleClass="root" stylesheets="@application.css">
+         <children>
+            <TableView fx:id="searchTable" layoutX="-4.0" layoutY="94.0" prefHeight="515.0" prefWidth="813.0" stylesheets="@application.css">
+               <columns>
+                  <TableColumn fx:id="name" prefWidth="93.0" text="NAME" />
+                  <TableColumn fx:id="ISBN" prefWidth="294.0" text="ISBN" />
+                  <TableColumn fx:id="author" prefWidth="315.0" text="AUTHOR" />
+                  <TableColumn fx:id="pages" prefWidth="109.0" text="PAGES" />
+               </columns>
+            </TableView>
+            <TextField layoutX="200.0" layoutY="-47.0" text="SEARCH" />
+            <Label layoutX="11.0" layoutY="19.0" prefHeight="68.0" prefWidth="246.0" style="-fx-background-color: #F1EEE8; -fx-background-radius: 50;" styleClass="table" stylesheets="@application.css" text="  Books">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textBookSearch" layoutX="637.0" layoutY="40.0" promptText="Search" />
+            <ImageView fitHeight="96.0" fitWidth="95.0" layoutX="134.0" layoutY="11.0">
+               <image>
+                  <Image url="@../Images/openBookIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
